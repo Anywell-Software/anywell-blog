@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" preserveAspectRatio="none" width="1200" height="240" role="img" aria-label="Anywell layered mountain range">
+  <path d="M0 240 L0 150 L150 90 L320 170 L470 70 L640 175 L820 80 L1000 165 L1200 95 L1200 240 Z" fill="#d3ccfb"></path>
+  <path d="M0 240 L0 185 L180 120 L360 200 L520 110 L700 205 L900 125 L1080 200 L1200 150 L1200 240 Z" fill="#9d8ef7"></path>
+  <path d="M0 240 L0 215 L220 160 L430 225 L620 150 L840 228 L1040 165 L1200 215 L1200 240 Z" fill="#6a5bef"></path>
+  <path d="M470 70 L506 95 L488 95 L478 86 L468 100 L452 100 Z" fill="#f3f1fe"></path>
+  <path d="M820 80 L854 104 L838 104 L827 95 L817 108 L803 108 Z" fill="#f3f1fe"></path>
+  <path d="M150 90 L182 112 L166 112 L156 104 L147 116 L132 116 Z" fill="#f3f1fe"></path>
+</svg>

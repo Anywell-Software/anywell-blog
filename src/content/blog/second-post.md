@@ -1,16 +1,49 @@
 ---
-title: 'Second post'
-description: 'Lorem ipsum dolor sit amet'
+title: 'The Swiss referendum: a primer for curious minds'
+description: "Switzerland has two main forms of citizen voting beyond regular elections: referendums and popular initiatives. Here's how each one works — and why the distinction matters."
 pubDate: 'Jul 15 2022'
 heroImage: '../../assets/blog-placeholder-4.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+Switzerland doesn't just elect representatives and let them govern. Citizens regularly vote directly on specific laws and constitutional questions. This is direct democracy in practice, and it happens through two main mechanisms: the **referendum** and the **popular initiative**.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Understanding the difference between them is fundamental to following Swiss politics. Let's walk through each one.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+## The referendum: challenging a law that exists
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+A referendum is a vote on a law that parliament has already passed. It asks: do we keep this law, or should it be rejected?
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+There are two types:
+
+### The optional referendum
+
+If 50,000 citizens sign a petition within 100 days of a law being published, the law is put to a popular vote. If voters reject it, the law doesn't take effect. If they accept it — or if nobody collects enough signatures — it goes into force as planned.
+
+The optional referendum is a corrective tool. It lets citizens override parliamentary decisions they disagree with. It's "optional" because it only happens if enough people ask for it.
+
+### The mandatory referendum
+
+Some decisions are so significant that they require a popular vote automatically, without any petition needed. Constitutional amendments always require a mandatory referendum. So do decisions to join certain international organizations.
+
+For a mandatory referendum to pass, it needs a **double majority**: more than half of individual voters, plus a majority of the 26 cantons. This protects smaller cantons from being outvoted by larger ones.
+
+## The popular initiative: proposing something new
+
+While a referendum challenges an existing law, a **popular initiative** proposes a new one. It asks: should we change the constitution in this specific way?
+
+To trigger a popular initiative, the organizing group must collect 100,000 valid signatures within 18 months. If they succeed, the question goes to a national vote.
+
+Popular initiatives always propose constitutional changes — you can't launch an initiative to change a regular law, only to amend the constitution. This is a higher bar deliberately: the constitution should change thoughtfully.
+
+If the initiative passes — again with a double majority — parliament must implement the constitutional change.
+
+## A quick reference
+
+| | Optional referendum | Mandatory referendum | Popular initiative |
+|---|---|---|---|
+| Who triggers it | 50,000 signatures | Automatic | 100,000 signatures |
+| Time to collect | 100 days | N/A | 18 months |
+| What it changes | Blocks a law | Required for constitution | Adds to constitution |
+| Majority needed | Simple majority | Double majority | Double majority |
+
+In the next post, we'll look at how the Federal Council works — Switzerland's unique model of a seven-person collective executive.

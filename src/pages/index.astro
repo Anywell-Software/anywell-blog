@@ -1,8 +1,15 @@
 ---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog'))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 3);
 ---
 
 <!doctype html>
@@ -12,38 +19,251 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
+
+		<!-- Hero -->
+		<section class="hero">
+			<div class="hero-content container">
+				<span class="eyebrow">Swiss civic education</span>
+				<h1>Make civics approachable<br />for everyone</h1>
+				<p class="hero-sub">
+					Anywell brings bite-size lessons about how Switzerland actually works — referendums, cantons,
+					federal councils — to learners of every age, background, and language level.
+				</p>
+				<div class="hero-ctas">
+					<a href="/blog" class="btn btn-primary">Read our blog</a>
+					<a href="/about" class="btn btn-ghost">About Anywell</a>
+				</div>
+			</div>
+			<div class="hero-mountains" aria-hidden="true">
+				<img src="/mountains.svg" alt="" width="1200" height="200" />
+			</div>
+		</section>
+
+		<!-- Features -->
+		<section class="features">
+			<div class="container">
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="feature-icon" style="background: var(--violet-100); color: var(--violet-600);">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+							</svg>
+						</div>
+						<h3>Bite-size lessons</h3>
+						<p>Each lesson takes 3–5 minutes and covers one concept clearly. No jargon, no walls of text — just what you need to understand your country.</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon" style="background: var(--meadow-100); color: var(--meadow-600);">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+							</svg>
+						</div>
+						<h3>For all ages</h3>
+						<p>Designed with older readers and newcomers in mind. Large text, unambiguous letterforms, and patient explanations that work for everyone from 16 to 80.</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon" style="background: var(--sun-100); color: var(--sun-600);">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+							</svg>
+						</div>
+						<h3>Earn as you learn</h3>
+						<p>Streaks, XP, and a friendly Alpine ibex mascot keep you coming back. Progress feels good — because understanding your democracy should feel good.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Latest posts -->
+		<section class="latest-posts">
+			<div class="container">
+				<div class="section-head">
+					<h2>From the Anywell team</h2>
+					<a href="/blog" class="btn btn-outline">All posts</a>
+				</div>
+				<div class="posts-grid">
+					{posts.map((post) => (
+						<a href={`/blog/${post.id}/`} class="post-card">
+							{post.data.heroImage && (
+								<div class="post-card-img">
+									<Image width={600} height={300} src={post.data.heroImage} alt="" />
+								</div>
+							)}
+							<div class="post-card-body">
+								<p class="post-card-date">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+								<h3 class="post-card-title">{post.data.title}</h3>
+								<p class="post-card-desc">{post.data.description}</p>
+							</div>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
 		<Footer />
 	</body>
 </html>
+
+<style>
+	/* Hero */
+	.hero {
+		background: linear-gradient(160deg, var(--violet-100) 0%, var(--violet-200) 100%);
+		position: relative;
+		overflow: hidden;
+		padding-top: var(--space-16);
+	}
+	.hero-content {
+		padding-bottom: var(--space-10);
+		position: relative;
+		z-index: 1;
+	}
+	.hero-content h1 {
+		margin-top: var(--space-4);
+		margin-bottom: var(--space-5);
+		color: var(--violet-900);
+		max-width: 640px;
+	}
+	.hero-sub {
+		font-size: var(--text-lg);
+		color: var(--violet-800);
+		max-width: 560px;
+		margin-bottom: var(--space-8);
+		line-height: var(--leading-normal);
+	}
+	.hero-ctas {
+		display: flex;
+		gap: var(--space-3);
+		flex-wrap: wrap;
+	}
+	.hero-mountains {
+		line-height: 0;
+		margin-top: var(--space-8);
+	}
+	.hero-mountains img {
+		display: block;
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		object-position: center bottom;
+		border-radius: 0;
+	}
+
+	/* Features */
+	.features {
+		padding: var(--space-16) 0;
+	}
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--space-6);
+	}
+	.feature-card {
+		background: var(--surface-card);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-md);
+		padding: var(--space-8);
+	}
+	.feature-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 56px;
+		height: 56px;
+		border-radius: var(--radius-md);
+		margin-bottom: var(--space-5);
+	}
+	.feature-card h3 {
+		margin-bottom: var(--space-3);
+		font-size: var(--text-lg);
+	}
+	.feature-card p {
+		margin: 0;
+		color: var(--text-muted);
+		font-size: var(--text-sm);
+		line-height: var(--leading-normal);
+	}
+
+	/* Latest posts */
+	.latest-posts {
+		padding: 0 0 var(--space-16);
+	}
+	.section-head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--space-4);
+		margin-bottom: var(--space-8);
+		flex-wrap: wrap;
+	}
+	.section-head h2 { margin: 0; }
+
+	.posts-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--space-6);
+	}
+	.post-card {
+		display: flex;
+		flex-direction: column;
+		background: var(--surface-card);
+		border: 1px solid var(--border-subtle);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-md);
+		overflow: hidden;
+		text-decoration: none;
+		color: inherit;
+		transition: box-shadow var(--dur-base) var(--ease-standard),
+		            transform var(--dur-base) var(--ease-standard);
+	}
+	.post-card:hover {
+		box-shadow: var(--shadow-lg);
+		transform: translateY(-3px);
+		text-decoration: none;
+	}
+	.post-card-img img {
+		display: block;
+		width: 100%;
+		height: 180px;
+		object-fit: cover;
+		border-radius: 0;
+	}
+	.post-card-body {
+		padding: var(--space-5) var(--space-6);
+		flex: 1;
+	}
+	.post-card-date {
+		font-family: var(--font-mono);
+		font-size: var(--text-xs);
+		color: var(--text-muted);
+		margin: 0 0 var(--space-2);
+	}
+	.post-card-title {
+		font-size: var(--text-lg);
+		margin: 0 0 var(--space-2);
+		color: var(--text-strong);
+		line-height: var(--leading-snug, 1.3);
+	}
+	.post-card:hover .post-card-title { color: var(--color-primary); }
+	.post-card-desc {
+		margin: 0;
+		font-size: var(--text-sm);
+		color: var(--text-muted);
+		line-height: var(--leading-normal);
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	@media (max-width: 900px) {
+		.features-grid { grid-template-columns: 1fr; }
+		.posts-grid { grid-template-columns: 1fr; }
+	}
+	@media (max-width: 600px) {
+		.hero-content h1 { font-size: var(--text-3xl); }
+		.hero-sub { font-size: var(--text-md); }
+	}
+</style>

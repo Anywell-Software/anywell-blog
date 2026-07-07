@@ -1,63 +1,128 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="About — Anywell"
+			description="Anywell is a Swiss startup making civic education approachable for everyone — bite-size lessons on referendums, cantons, and how Switzerland actually works."
+		/>
+	</head>
+	<body>
+		<Header />
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+		<div class="about-hero">
+			<div class="container">
+				<span class="eyebrow">Our mission</span>
+				<h1>Civic education should be for everyone</h1>
+			</div>
+		</div>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+		<main class="container container--narrow">
+			<div class="prose">
+				<p class="lead">
+					Switzerland votes on referendums three or four times a year. Citizens decide on laws,
+					constitutional amendments, and budget decisions — at the federal, cantonal, and municipal
+					level. That's remarkable. It's also genuinely difficult to follow if nobody ever explained
+					how it works.
+				</p>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+				<p>
+					Anywell started from a simple observation: most civics education happens in school, once,
+					and is quickly forgotten. Adults who moved to Switzerland as adults, seniors who never had
+					formal instruction, new citizens preparing for naturalization, parents who want to explain a
+					vote to their kids — all of them deserve a clear, patient, encouraging way to learn.
+				</p>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+				<h2>What we're building</h2>
+
+				<p>
+					We're building a learning app — and this blog — that teaches Swiss civic fundamentals in
+					small, self-contained lessons. Think of it as the friendly version of your country's
+					constitution. Each lesson is 3–5 minutes, covers one idea clearly, and is followed by a
+					short quiz so you actually remember it.
+				</p>
+
+				<p>
+					The experience borrows the best of language-learning apps: streaks, XP, encouraging
+					feedback. But the soul is distinctly Swiss — alpine, unhurried, and clear.
+				</p>
+
+				<h2>Our principles</h2>
+
+				<ul>
+					<li>
+						<strong>Plain language first.</strong> Civic terms like "optional referendum" or "popular
+						initiative" get explained in everyday words before we use the official label.
+					</li>
+					<li>
+						<strong>All-ages accessible.</strong> We use Atkinson Hyperlegible — a typeface designed
+						for people with low vision — for body text. Tap targets are never smaller than 48px.
+						Examples speak to voters, newcomers, and retirees, not just students.
+					</li>
+					<li>
+						<strong>Encouraging, not patronizing.</strong> Getting a question wrong means "Not quite
+						— let's look again." Getting it right means "Exactly right." We celebrate effort; we
+						never shame mistakes.
+					</li>
+					<li>
+						<strong>Honest about Switzerland.</strong> We explain the system as it works in practice
+						— including its quirks — not as a simplified fairytale. Respect for the learner means
+						giving them the real picture.
+					</li>
+				</ul>
+
+				<h2>The team</h2>
+
+				<p>
+					Anywell is a small team based in Zürich. We're researchers, educators, and designers who
+					believe a functioning democracy requires informed citizens — and that informed citizens
+					deserve good tools.
+				</p>
+
+				<p>
+					This blog is where we think out loud about civic education, accessible design, and what
+					it means to build technology for the public good.
+				</p>
+
+				<div class="about-cta">
+					<a href="/blog" class="btn btn-primary">Read the blog</a>
+					<a href="https://github.com/Anywell-Software" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+				</div>
+			</div>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.about-hero {
+		background: linear-gradient(160deg, var(--violet-50) 0%, var(--violet-100) 100%);
+		padding: var(--space-12) 0 var(--space-10);
+		border-bottom: 1px solid var(--border-subtle);
+	}
+	.about-hero h1 {
+		margin-top: var(--space-3);
+		color: var(--violet-900);
+		max-width: 600px;
+	}
+
+	.lead {
+		font-size: var(--text-lg);
+		color: var(--text-body);
+		line-height: var(--leading-normal);
+		margin-bottom: var(--space-6);
+	}
+
+	.about-cta {
+		display: flex;
+		gap: var(--space-3);
+		margin-top: var(--space-10);
+		flex-wrap: wrap;
+	}
+</style>

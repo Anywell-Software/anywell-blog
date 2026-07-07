@@ -1,16 +1,38 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
+title: 'Why civic literacy matters in Switzerland'
+description: "Switzerland votes on referendums three or four times a year. Yet most residents couldn't explain the difference between an optional referendum and a popular initiative. That's the gap Anywell exists to close."
 pubDate: 'Jul 08 2022'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+Switzerland is one of the most direct democracies in the world. Citizens vote on federal, cantonal, and municipal questions several times a year — on everything from pension reforms to building permits. The system is extraordinary. It's also genuinely hard to understand if nobody ever sat down and explained it to you.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Most civic education happens in school, once, when you're sixteen and thinking about other things. Then it stops. Adults who moved to Switzerland from other countries, seniors who never had formal instruction in Swiss politics, newcomers preparing for naturalization, parents trying to explain a vote to their children — all of them are left to piece together an understanding on their own.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+## The gap is larger than you'd expect
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+A 2021 survey found that only 38% of Swiss residents could correctly explain the difference between an optional referendum and a popular initiative. These are two of the most important mechanisms in Swiss direct democracy. If you don't understand the difference, you can't meaningfully evaluate a vote.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+This isn't a failure of intelligence or interest. It's a failure of access. The information exists — it's in government pamphlets, civics textbooks, newspaper explainers — but it's scattered, dense, and rarely written for someone coming to it fresh.
+
+## Bite-size and consistent
+
+The research on learning is clear: short, frequent practice beats occasional deep dives. Spaced repetition — reviewing material at increasing intervals — is among the most well-studied techniques for long-term retention. Language apps have used this for years.
+
+Civic education hasn't caught up. Most resources are still designed as one-time reads: pamphlets you pick up before a vote and then discard. There's no mechanism for building knowledge gradually, checking your understanding, or returning to reinforce what you've learned.
+
+That's what Anywell is trying to change. Bite-size lessons. A short quiz at the end. A streak to bring you back tomorrow. Gentle, encouraging feedback when you get something wrong.
+
+## Plain language is a civic issue
+
+There's another dimension worth naming: civic information is often written in language that excludes people. Not intentionally, but structurally. Legal definitions, passive constructions, sentences built on technical terms that are never explained.
+
+Plain language isn't dumbing things down. It's showing respect for the reader. It means introducing "referendum" in everyday words before using the term. It means one idea per sentence. It means writing for the voter who has eight minutes on their lunch break, not the political scientist with all morning.
+
+Anywell's content is written in this spirit. We explain Swiss civic structures the way a knowledgeable friend would — clearly, patiently, without condescension.
+
+## What's coming
+
+Over the next few posts, we'll walk through the Swiss political system in plain language: how referendums work, what a popular initiative actually is, how the Federal Council operates, and how the cantonal system shapes everyday life.
+
+If you've ever sat down to vote and felt uncertain what you were actually deciding, you're who we're writing for.
