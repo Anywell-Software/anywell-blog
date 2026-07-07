@@ -25,7 +25,7 @@ jobs:
           context: .
           file: DOCKERFILE
           push: true
-          tags: ghcr.io/thegreatshan/bloganywell:latest
+          tags: ghcr.io/anywell-software/bloganywell:latest
           
       - name: Redeploy application
         run: kubectl rollout restart deployment/blog-website
