@@ -1,6 +1,6 @@
 ---
-title: 'The Swiss referendum: a primer for curious minds'
-description: "Switzerland has two main forms of citizen voting beyond regular elections: referendums and popular initiatives. Here's how each one works — and why the distinction matters."
+title: 'Why do Referendas not work as inteded?'
+description: "Switzerland "
 pubDate: 'Jul 15 2022'
 heroImage: '../../assets/blog-placeholder-4.jpg'
 ---
