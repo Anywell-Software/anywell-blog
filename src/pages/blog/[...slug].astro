@@ -1,5 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
+import { LANGUAGES } from '../../consts';
+import { getLang, getTranslationKey } from '../../i18n';
 import BlogPost from '../../layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
@@ -13,8 +15,14 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
+
+const key = getTranslationKey(post);
+const translations = (await getCollection('blog'))
+	.filter((p) => getTranslationKey(p) === key)
+	.map((p) => ({ lang: getLang(p), href: `/blog/${p.id}/` }))
+	.sort((a, b) => Object.keys(LANGUAGES).indexOf(a.lang) - Object.keys(LANGUAGES).indexOf(b.lang));
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...post.data} lang={getLang(post)} translations={translations}>
 	<Content />
 </BlogPost>
